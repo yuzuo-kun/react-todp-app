@@ -1,0 +1,154 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+input {
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: flex;
+  text-align: center;
+}
+
+form input {
+  flex: 1;
+  margin-right: 5px;
+}
+
+form button {
+  background-color: rgb(87, 120, 255);
+}
+
+form button:hover {
+  background-color: rgb(35, 57, 179);
+}
+
+.custom-box {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.sort-select {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+
+.filter-buttons button {
+  margin-left: 5px;
+  background-color: rgb(77, 214, 27);
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: rgb(57, 157, 21);
+}
+
+.todo-list {
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.todo-list li.out {
+  background-color: #ff4c2d57;
+}
+
+.todo-list li.harry-up {
+  background-color: #ff9a2d57;
+}
+
+.todo-list li.about-time {
+  background-color: #ffe72d57;
+}
+
+.todo-list li.completed {
+  background-color: #71706657;
+}
+
+.todo-list li>span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-list li .priority-box span {
+  font-size: 12px;
+  color: #555;
+}
+
+.todo-list li .priority-box {
+  display: flex;
+  align-items: center;
+}
+
+.priority-input {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.priority-element {
+  width: 15px;
+  height: 20px;
+  border-right: 1px solid #888;
+  cursor: pointer;
+}
+
+.priority-element.active1 {
+  background-color: rgba(172, 255, 47, 0.955);
+}
+.priority-element.active2 {
+  background-color: rgba(255, 245, 47, 0.955);
+}
+.priority-element.active3 {
+  background-color: rgba(255, 47, 47, 0.955);
+}
+
+.priority-input > .priority-element:last-child {
+  border: none;
+}
+
+.todo-list li .dead-line {
+  margin-right: 5px;
+}
+
+.todo-list li button {
+  background-color: rgb(255, 70, 70);
+}
+
+.todo-list li button:hover {
+  background-color: rgb(203, 56, 56);
+}
